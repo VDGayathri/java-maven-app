@@ -4,11 +4,9 @@ pipeline {
 		stage('Build') {
 			steps {
 				sh 'echo test'
-				sh ''
-				'
+				sh '''
 				echo "multi line"
-				ls - lrt ''
-				'
+				ls - lrt '''
 			}
 		}
 	}
